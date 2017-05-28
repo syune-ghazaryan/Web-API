@@ -43,6 +43,7 @@ namespace FormSender
             strReq.Write(bytes, 0, bytes.Length);
             WebResponse response = request.GetResponse();
         }
+
        
         /// <summary>
         /// get image from server
@@ -69,12 +70,15 @@ namespace FormSender
                 using (Stream s = File.Create(receivePath))
                 {
                     ms.CopyTo(s);
+                    pictureBox1.ImageLocation = receivePath;
+
                 }
 
             }
 
 
         }
-    
+
+      
     }
 }

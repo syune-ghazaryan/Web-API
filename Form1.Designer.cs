@@ -32,6 +32,8 @@
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.btnGet = new System.Windows.Forms.Button();
             this.txtImageName = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSend
@@ -53,7 +55,7 @@
             // 
             // btnGet
             // 
-            this.btnGet.Location = new System.Drawing.Point(12, 142);
+            this.btnGet.Location = new System.Drawing.Point(12, 119);
             this.btnGet.Name = "btnGet";
             this.btnGet.Size = new System.Drawing.Size(75, 23);
             this.btnGet.TabIndex = 3;
@@ -63,22 +65,32 @@
             // 
             // txtImageName
             // 
-            this.txtImageName.Location = new System.Drawing.Point(251, 93);
+            this.txtImageName.Location = new System.Drawing.Point(251, 60);
             this.txtImageName.Name = "txtImageName";
             this.txtImageName.Size = new System.Drawing.Size(100, 20);
             this.txtImageName.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(185, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 181);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 312);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtImageName);
             this.Controls.Add(this.btnGet);
             this.Controls.Add(this.txtUrl);
             this.Controls.Add(this.btnSend);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,6 +102,7 @@
         private System.Windows.Forms.TextBox txtUrl;
         private System.Windows.Forms.Button btnGet;
         private System.Windows.Forms.TextBox txtImageName;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
